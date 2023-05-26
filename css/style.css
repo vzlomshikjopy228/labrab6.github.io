@@ -1,0 +1,887 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'CirceExtra';
+  src: url("../fonts/Circe-ExtraBold.eot");
+  src: local("../fonts/Circe Extra Bold"), local("Circe-ExtraBold"), url("../fonts/Circe-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-ExtraBold.woff2") format("woff2"), url("../fonts/Circe-ExtraBold.woff") format("woff"), url("../fonts/Circe-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CirceRegular';
+  src: url("../fonts/Circe-Regular.eot");
+  src: local("Circe"), local("Circe-Regular"), url("../fonts/Circe-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Regular.woff2") format("woff2"), url("../fonts/Circe-Regular.woff") format("woff"), url("../fonts/Circe-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'CirceBold';
+  src: url("../fonts/Circe-Bold.eot");
+  src: local("../fonts/Circe Bold"), local("Circe-Bold"), url("../fonts/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Bold.woff2") format("woff2"), url("../fonts/Circe-Bold.woff") format("woff"), url("../fonts/Circe-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+/*---------------------------------------------------*/
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: black;
+  font-family: 'CirceExtra'; }
+
+/*---------------------------------------------------*/
+hr {
+  opacity: 0.3;
+  border: 1px solid #333333; }
+
+/*---------------------------------------------------*/
+.wrapper {
+  min-height: 100%; }
+
+/*---------------------------------------------------*/
+.container {
+  max-width: 1296px;
+  position: relative;
+  margin: 0px auto; }
+
+/*---------------------------------------------------*/
+.header {
+  position: absolute;
+  width: 100%;
+  margin: 20px 0px;
+  height: 140px;
+  left: 0;
+  top: 0;
+  z-index: 50; }
+  .header__container {
+    height: 140px; }
+  .header__delimiter {
+    position: relative;
+    bottom: 28px;
+    margin-top: 30px;
+    margin-bottom: 40px; }
+  .header__menu {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 167px;
+    font-family: 'CirceBold';
+    font-size: 14px; }
+  .header__item {
+    margin-right: 20px;
+    color: #333333; }
+  .header__item--no-margin {
+    margin: 0px;
+    color: #333333; }
+
+/*---------------------------------------------------*/
+.header__icon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  top: -60px; }
+
+/*---------------------------------------------------*/
+.button {
+  background-color: #ec1b2e;
+  color: white;
+  width: 143px;
+  height: 40px;
+  font-size: 14px; }
+
+/*---------------------------------------------------*/
+.header__button {
+  position: absolute;
+  top: 0px;
+  right: 0px; }
+
+/*---------------------------------------------------*/
+.contact-information {
+  display: inline-block;
+  font-family: 'CirceRegular';
+  font-size: 14px; }
+  .contact-information__adress {
+    display: inline-block;
+    margin-top: 3px; }
+  .contact-information__adress-image {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 20px; }
+  .contact-information__telephone {
+    display: inline-block;
+    margin-top: 3px; }
+  .contact-information__telephone-image {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    margin-left: 45px; }
+  .contact-information__e-mail {
+    display: inline-block;
+    margin-top: 3px; }
+  .contact-information__e-mail-image {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    margin-left: 45px; }
+
+/*---------------------------------------------------*/
+.header__contact-information {
+  width: 674px;
+  height: 24px;
+  position: absolute;
+  left: 348px;
+  margin-top: 8px;
+  margin-bottom: 28px; }
+
+/*---------------------------------------------------*/
+.school-name {
+  font-family: 'CirceBold';
+  display: inline-block; }
+
+/*---------------------------------------------------*/
+.header__school-name {
+  color: #ec1b2e;
+  font-size: 14px;
+  width: 217px;
+  height: 38px;
+  margin-bottom: 29.43px;
+  line-height: 140%; }
+
+/*---------------------------------------------------*/
+.main-image {
+  position: relative; }
+  .main-image__town-image {
+    width: 100%;
+    max-width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 180px; }
+  .main-image__container {
+    position: relative; }
+  .main-image__recruitment-block {
+    position: absolute;
+    top: 306px;
+    width: 586px;
+    height: 418px; }
+  .main-image__recruitment {
+    position: relative;
+    background: rgba(51, 51, 51, 0.5);
+    width: 586px;
+    height: 310px; }
+  .main-image__text {
+    opacity: 100%;
+    width: 526px;
+    height: 280px;
+    font-family: 'CirceExtra';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 140%;
+    color: #FFF;
+    position: absolute;
+    top: 15px;
+    left: 30px; }
+  .main-image__button {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 163px;
+    height: 58px; }
+
+/*---------------------------------------------------*/
+.icon--big {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  right: 0px;
+  top: 1071px;
+  opacity: 15%; }
+
+/*---------------------------------------------------*/
+.about__title {
+  width: 414px;
+  height: 87px;
+  position: absolute;
+  left: 64px;
+  background: #FFFFFF;
+  z-index: 5; }
+
+.about__information-block {
+  border: 10px solid #EC1B2E;
+  width: 638px;
+  height: 405px;
+  position: absolute;
+  bottom: 0px; }
+
+.about__text {
+  width: 458px;
+  height: 243px;
+  font-family: 'CirceRegular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #333333;
+  margin-top: 86px;
+  margin-bottom: 76px;
+  margin-left: 90px;
+  margin-right: 90px; }
+
+/*---------------------------------------------------*/
+.about--red-border {
+  position: absolute;
+  top: 1030px;
+  width: 638px;
+  height: 446px; }
+
+/*---------------------------------------------------*/
+.title {
+  font-family: 'CirceExtra';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #333333; }
+  .title__text {
+    width: 354px;
+    height: 67px;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px; }
+
+/*---------------------------------------------------*/
+.courses {
+  position: relative; }
+  .courses__title {
+    position: absolute;
+    display: inline-block;
+    left: 25%;
+    width: 634px;
+    height: 67px;
+    font-family: 'CirceExtra';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #333333; }
+  .courses__pick-course {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 68px;
+    justify-content: space-between; }
+  .courses__course--red {
+    display: inline-block;
+    width: 306px;
+    height: 68px;
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 140%;
+    text-align: center;
+    color: #EC1B2E; }
+  .courses__course {
+    display: inline-block;
+    width: 306px;
+    height: 68px;
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    color: #333333; }
+  .courses__button {
+    width: 175px;
+    height: 68px;
+    display: inline-block;
+    margin-right: 164px; }
+  .courses__button-group {
+    position: relative;
+    top: 35%;
+    left: 30%; }
+  .courses__button-text {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-family: 'CirceRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF; }
+
+/*---------------------------------------------------*/
+.courses--positioned {
+  position: absolute;
+  top: 1626px;
+  width: 100%;
+  height: 285px; }
+
+/*---------------------------------------------------*/
+.table {
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #333333; }
+  .table__text {
+    display: inline;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 96px;
+    margin-bottom: 10px;
+    font-family: 'CirceBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #333333; }
+  .table__header {
+    background-color: rgba(51, 51, 51, 0.05); }
+  .table__group {
+    width: 180px;
+    height: 48px; }
+  .table__intensity {
+    width: 300px;
+    height: 48px; }
+  .table__cost {
+    width: 596px;
+    height: 48px; }
+  .table__body {
+    height: 226px;
+    position: relative; }
+  .table__text-age {
+    margin-top: 10;
+    margin-left: 20px;
+    margin-right: 81px;
+    margin-bottom: 171px; }
+  .table__text-group--up {
+    margin-top: 40;
+    margin-bottom: 98px; }
+  .table__text-group--center {
+    margin-top: 40;
+    margin-bottom: 30px; }
+  .table__text-group-schedule {
+    margin-bottom: 18px; }
+  .table__text-group-amount {
+    margin-bottom: 18px; }
+
+/*---------------------------------------------------*/
+.table--positioned {
+  width: 1076px;
+  height: 842px;
+  position: absolute;
+  top: 2011px;
+  left: 9%; }
+
+/*---------------------------------------------------*/
+.main-information-block__title {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  left: 34%;
+  width: 222px;
+  height: 67px;
+  align-self: flex-start; }
+
+/*---------------------------------------------------*/
+.main-information-block--positioned-v1 {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 3003px;
+  width: 100%;
+  height: 752px; }
+
+/*---------------------------------------------------*/
+.information-group__item {
+  position: relative;
+  width: 306px;
+  height: 585px; }
+
+.information-group__image {
+  width: 306px;
+  height: 200px; }
+
+.information-group__title {
+  font-family: 'CirceBold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 30px;
+  line-height: 140%;
+  text-align: center;
+  color: #333333; }
+
+.information-group__subtitle {
+  display: inline-block;
+  position: relative;
+  margin: 20px 20px;
+  list-style: disc; }
+
+.information-group__button {
+  position: absolute;
+  bottom: 0px;
+  left: 25%;
+  font-family: 'CirceBold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #FFFFFF; }
+
+.information-group__list-item {
+  display: inline-block;
+  font-family: 'CirceRegular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333333; }
+
+/*---------------------------------------------------*/
+.information-group--positioned-v1 {
+  width: 100%;
+  height: 585px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between; }
+
+/*---------------------------------------------------*/
+.main-information-block--positioned-v2 {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 3905px;
+  width: 100%;
+  height: 752px; }
+
+/*---------------------------------------------------*/
+.information-group--positioned-v2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  height: 752px; }
+
+/*---------------------------------------------------*/
+.information-group__item--v1 {
+  position: relative;
+  width: 306px;
+  height: 585px; }
+
+.information-group__item--v2 {
+  position: relative;
+  width: 416px;
+  height: 539px;
+  top: -38px; }
+
+.information-group__image--v1 {
+  width: 306px;
+  height: 200px; }
+
+.information-group__title--v2 {
+  display: inline-block;
+  width: 360px;
+  font-family: 'CirceBold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 30px;
+  line-height: 140%;
+  left: 4%;
+  text-align: left;
+  color: #333333;
+  position: relative; }
+
+.information-group__subtitle {
+  display: inline-block;
+  position: relative;
+  margin: 20px 20px;
+  list-style: disc; }
+
+.information-group__event-button {
+  position: absolute;
+  background-color: #ec1b2e;
+  bottom: 0px;
+  left: 17px;
+  font-family: 'CirceBold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 15px 30px;
+  line-height: 140%;
+  color: #FFFFFF; }
+
+.information-group__event-text {
+  font-family: 'CirceRegular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333333; }
+
+/*---------------------------------------------------*/
+.information-group__image--v2 {
+  width: 416px;
+  height: 250px; }
+
+/*---------------------------------------------------*/
+.news-block__title {
+  position: absolute;
+  top: 0px;
+  left: 37%;
+  width: 348px;
+  height: 67px; }
+
+.news-block__title-name {
+  font-family: 'CirceExtra';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #333333; }
+
+.news-block__item {
+  width: 306px;
+  height: 352px;
+  position: relative; }
+
+.news-block__title-main {
+  width: 306px;
+  height: 102px;
+  font-family: 'CirceBold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: #333333; }
+
+.news-block__subtitle {
+  width: 306px;
+  height: 132px;
+  margin-top: 25px;
+  font-family: 'CirceRegular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333333; }
+
+.news-block__button {
+  background-color: red;
+  width: 165px;
+  height: 58px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  font-family: 'CirceBold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #FFFFFF;
+  padding: 15px 30px; }
+
+/*---------------------------------------------------*/
+.news-block--positioned {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 519px;
+  top: 4761px; }
+
+/*---------------------------------------------------*/
+.footer {
+  background: rgba(51, 51, 51, 0.05); }
+  .footer__contact-information-block {
+    width: 221px;
+    height: 192px; }
+  .footer__contact-information-name {
+    width: 217px;
+    height: 40px;
+    font-family: 'CirceBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #333333; }
+  .footer__contact-information-group {
+    position: relative;
+    margin-top: 40px;
+    margin-right: 24px;
+    width: 197px;
+    height: 112px; }
+  .footer__contact-information {
+    position: relative;
+    width: 123px;
+    height: 20px;
+    left: 45px;
+    margin-bottom: 23px;
+    font-family: 'CirceRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333; }
+  .footer__contact-information-image-group {
+    top: 21%;
+    left: 0px;
+    position: absolute;
+    height: 112px;
+    width: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; }
+  .footer__watermark {
+    position: relative;
+    top: 47px;
+    display: inline-block;
+    width: 121px;
+    height: 14px;
+    font-family: 'CirceRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+    color: #333333;
+    opacity: 0.5; }
+  .footer__contact-information-image {
+    width: 24px;
+    height: 24px; }
+  .footer__image-group {
+    width: 180px;
+    height: 30px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between; }
+  .footer__image {
+    width: 30px;
+    height: 30px; }
+  .footer__links-block--v1 {
+    position: absolute;
+    width: 200px;
+    margin-left: 69px;
+    height: 398px;
+    left: 220px;
+    top: 0px; }
+  .footer__cost-studying-block-information--v1 {
+    width: 100%;
+    height: 90px;
+    margin-top: 25px; }
+  .footer__cost-studying-block-information--v2 {
+    width: 100%;
+    height: 90px;
+    margin-top: 25px;
+    margin-bottom: 20px; }
+  .footer__links-block-title--v1 {
+    width: 51px;
+    height: 28px;
+    font-family: 'CirceRegular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #333333; }
+  .footer__cost-studying-block--v2 {
+    position: absolute;
+    width: 200px;
+    height: 163px;
+    margin-left: 69px;
+    left: 489px;
+    top: 143px;
+    margin-top: 40px; }
+  .footer__cost-studying-block--v1 {
+    position: absolute;
+    width: 200px;
+    height: 143px;
+    margin-left: 69px;
+    left: 489px;
+    top: 0px; }
+  .footer__cost-studying-block-title--v1 {
+    width: 185px;
+    height: 28px;
+    font-family: 'CirceBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 140%;
+    color: #333333; }
+  .footer__cost-studying-block-title--v2 {
+    width: 159px;
+    height: 28px;
+    width: 185px;
+    height: 28px;
+    font-family: 'CirceBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #333333; }
+  .footer__cost-studying-block-item {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 22px;
+    font-family: 'CirceRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+    color: #333333; }
+  .footer__links-block--v2 {
+    position: absolute;
+    width: 200px;
+    height: 323px;
+    margin-left: 69px;
+    left: 756px;
+    top: 0px; }
+  .footer__links-block-title--v2 {
+    width: 90px;
+    height: 28px;
+    font-family: 'CirceBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #333333; }
+  .footer__links-block--v3 {
+    position: absolute;
+    width: 200px;
+    height: 213px;
+    margin-left: 69px;
+    right: 0px;
+    top: 0px; }
+  .footer__links-group--v1 {
+    width: 100%;
+    height: 345px; }
+  .footer__links-group--v2 {
+    width: 100%;
+    height: 270px; }
+  .footer__links-group--v3 {
+    width: 100%;
+    height: 160px; }
+  .footer__links-block-title--v3 {
+    width: 61px;
+    height: 28px;
+    font-family: 'CirceBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #333333; }
+  .footer__links-block-item {
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    padding-top: 19px;
+    font-family: 'CirceRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #333333; }
+  .footer__content-block {
+    position: relative;
+    height: 400px;
+    top: 60px; }
+
+/*---------------------------------------------------*/
+.footer--positioned {
+  width: 100%;
+  height: 588px;
+  position: relative;
+  top: 4915px; }
+
+/*---------------------------------------------------*/
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px; } }
+
+/*---------------------------------------------------*/
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px; } }
+
+/*---------------------------------------------------*/
+@media (max-width: 767px) {
+  .container {
+    max-width: none; } }
